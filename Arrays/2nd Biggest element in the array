@@ -1,0 +1,34 @@
+//program for 2nd largest element in the array
+
+public class Main
+{
+      int meth1(int arr[])
+    {
+      int B1=arr[0];
+      int B2=arr[0];
+      
+        for(int i=1;i<arr.length;i++)
+        {
+            if(arr[i]>B1)
+            {
+                B1=arr[i];
+            }
+        }
+        for(int i=1;i<arr.length;i++)
+        {
+             if(arr[i]>B2 && arr[i]<B1)
+             {
+                 B2=arr[i];
+             }
+        }
+        return B2;
+    }
+	public static void main(String[] args) 
+	{
+	    int arr[] = {12, 35, 91, 10, 84, 21};
+	    
+		Main obj=new Main();
+		int a=obj.meth1(arr);
+		System.out.println(a);
+	}
+}
