@@ -21,6 +21,6 @@ public class Main
 	    
 		Main obj=new Main();
 		int a=obj.meth1(arr);
-		
+		System.out.println(a);
 	}
 }
