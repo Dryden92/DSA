@@ -1,0 +1,21 @@
+public class Main
+{
+    static void meth1()
+    {
+       
+        String name="dryden prasad";
+        
+        int x=0;
+        for(int i=0;i<name.length();i++)
+        {
+            x++;
+        }
+        System.out.println(x);
+    }
+    
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World");
+		Main.meth1();
+	}
+}
