@@ -1,0 +1,26 @@
+public class Main
+{
+    int meth(String name, char k)
+    {
+        for(int i=0;i<name.length();i++)
+        {
+            if(name.charAt(i)==k)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+	public static void main(String[] args) 
+	{
+	    Main obj=new Main();
+	    int a=obj.meth("dryden",'d');
+		
+		if(a==-1)
+		{
+		    System.out.println("not found");
+		}
+		else
+		System.out.println("found at : "+a);
+	}
+}
