@@ -1,0 +1,29 @@
+//number is palindrome or not
+
+public class Main
+{
+    int meth(int n)
+    {
+        int temp=0;
+       while(n>0)
+       {
+           int r=n%10;
+           temp=(temp*10)+r;
+           n=n/10;
+       }
+       return temp;
+    }
+	public static void main(String[] args) 
+	{
+	    int n=121;
+	    Main obj=new Main();
+	    int a=obj.meth(n);
+	    if(a==n)
+	    {
+	        System.out.println("number is palindrome");
+	    }
+	    else
+	       System.out.println("number is not palindrome");
+		
+	}
+}
