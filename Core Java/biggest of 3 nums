@@ -1,0 +1,30 @@
+package javaprograms;
+
+public class ClassA {
+	
+	void meth(int a, int b, int c)
+	{
+		if(a>b)
+		{
+			if(a>c)
+			{
+				System.out.println(a+ " is biggest number");
+			}
+		}
+		else if(b>c)
+		{
+			if(b>a)
+			{
+				System.out.println(b+" is biggest number");
+			}
+		}
+		else
+			System.out.println(c+ " is biggest number");
+	}
+	public static void main(String[] args) 
+	{
+	 ClassA obj=new ClassA();
+	 obj.meth(500,100,15);
+	}
+
+}
