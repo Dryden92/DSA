@@ -1,0 +1,77 @@
+package javaprograms;
+
+public class ifelse {
+	
+	void meth1(int i)
+	{
+		if(i<='A')
+		{
+			System.out.println("if statement executed");
+		}
+		System.out.println("function coompleted");
+	}
+	void meth2(int i)
+	{
+		if(i<=50)
+		System.out.println("statement executed");
+		System.out.println("statement executed");
+	}
+	void meth3(int i, int j)
+	{
+		if(i<=5)
+		{
+			if(j%2==0)
+			{
+				System.out.println("number is even");
+			}
+			else {
+				System.out.println("number is odd");
+			}
+		}
+	}
+	void meth4(int i)
+	{
+		if(i<=5)
+		{
+			System.out.println("correct");
+			System.out.println("hi");
+		}
+		else
+			System.out.println("correct");
+			System.out.println("hello");
+	}
+	void meth5(int i)
+	{
+		if(true)
+		{
+			System.out.println("if block executed");
+		}
+		else 
+			System.out.println("else block executed");
+	}
+	void meth6(int i)
+	{
+		if(i>0)
+		{
+			System.out.println("the number is positive");
+		}
+		else if(i<0)
+		{
+			System.out.println("the number is negative");
+		}
+		else
+			System.out.println("the number is zero");
+	}
+
+	public static void main(String[] args) 
+	{
+		ifelse obj=new ifelse();
+		new ifelse().meth1('A');
+		obj.meth2(2);
+		obj.meth3(1, 7);
+		obj.meth4(1);
+		obj.meth5(1000);
+		obj.meth6(-1);
+	}
+
+}
