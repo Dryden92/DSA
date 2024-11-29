@@ -1,0 +1,57 @@
+package javaprograms;
+public class switch_ 
+{
+	void meth(String name, char gender, int age)
+	{
+		byte b=30;
+		
+		switch (b+35-5)
+		{
+		case 10: 
+			System.out.println("case 10 executed");
+			break;
+		case 20:
+			System.out.println("case 20 executed");
+			break;
+		case 'A' -5:
+			System.out.println("case 60 executed");
+			switch(gender)
+			{
+			case 'm','M':
+				if(age>=29)
+				{
+					System.out.println(name+" you are elligible");
+				}
+				else
+					System.out.println("you need to wait" +(29-age)+ "years");
+			break;
+			case 'f','F':
+				if(age>=26)
+				{
+					System.out.println(name+" you are elligible");
+				}
+				else
+					System.out.println("you need to wait" +(26-age)+ "years");
+			break;
+			default:
+				System.out.println("invalid input");
+			}
+		case 400:
+			System.out.println("case 400 executed");
+			break;
+		case 50:
+			System.out.println("case 50 executed");
+			break;
+		default:
+			System.out.println("default case executed");
+			break;
+		}
+		
+	}
+	public static void main(String[] args) 
+	{
+     switch_ obj=new switch_();
+     obj.meth("dryden", 'm', 22);
+	}
+
+}
