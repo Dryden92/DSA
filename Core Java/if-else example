@@ -1,0 +1,31 @@
+package javaprograms;
+
+public class marks {
+	 
+	void meth(int m)
+	{
+		if(m>=80)
+		{
+			System.out.println("congratulations!!! you got a");
+		}
+		else if(m>=60 && m<80)
+		{
+			System.out.println("nice job!!! you got b");
+		}
+		else if(m>=50 && m<60)
+		{
+			System.out.println("fair you got c");
+		}
+		else if (m>=30 && m<50)
+		{
+			System.out.println("poor performance you got d");
+		}
+		else
+			System.out.println("you are failed you got e");
+	}
+	public static void main(String[] args) 
+	{
+	  new marks().meth(25);
+	}
+
+}
