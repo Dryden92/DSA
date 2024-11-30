@@ -1,0 +1,92 @@
+package javaprograms;
+
+public class forloop {
+
+	void meth1()
+	{
+		System.out.println("code is starting...");
+		for(int i=1;i<=5;i++)
+		{
+			System.out.println("i value= "+i);
+		}
+		System.out.println("code finished");
+	}
+	void meth2()
+	{
+		System.out.println("code is staring...");
+		for(int i=1;i<=3;i++)
+		{
+			for(int j=3;j>=0;j--)
+		    {
+				System.out.println("i: "+ i + "-----"+ "j: "+j);
+			}
+			System.out.println("---------------------");
+		}
+	}
+	void meth3()
+	{
+		System.out.println("code is staring...");
+		int i=1;
+		for(;i<=5;)
+		
+			System.out.println("i value : "+ i);
+			i++;
+		
+	}
+	void meth4()
+	{
+		System.out.println("code is staring...");
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println("i value: "+ ++i + ++i);
+		}
+	}
+	void meth5()
+	{
+		System.out.println("code is staring...");
+		for(int i=1;i<=5;i++)
+		{
+			char c='A';
+			for(int j=1;j<=i;j++)
+			{
+				System.out.println(c+" ");
+				c++;
+			}
+			System.out.println();
+		}
+	}
+	void meth6()
+	{
+		int i=1;
+		for(System.out.print("code is "),System.out.println("starting...");i<=3;System.out.println(new forloop().meth7()))
+		{
+			System.out.println("i value "+ i++);
+		}
+	}
+	String meth7()
+	{
+		System.out.println("meth7 code is starting...");
+		return "java is awesome";
+	}
+	void meth8()
+	{
+		System.out.println("code is starting...");
+		int i=1;
+		for(;;)
+		{
+			System.out.println("i value is "+ i++);
+		}
+	}
+	public static void main(String[] args) 
+	{
+		forloop obj=new forloop();
+				//obj.meth1();
+				//obj.meth2();
+				//obj.meth3();
+				//obj.meth4();
+				//obj.meth5();
+				obj.meth6();
+				//obj.meth8();
+	}
+
+}
