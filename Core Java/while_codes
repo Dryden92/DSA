@@ -1,0 +1,68 @@
+package javaprograms;
+
+public class while_ {
+
+	void meth1(int i)
+	{
+		System.out.println("code is starting...");
+		while(i<=5)
+		{
+			System.out.println("i = "+i);
+			i++;
+		}
+	}
+	 void meth2(int i)
+	 {
+		 System.out.println("code is staring...");
+		 while(i<=10)
+		 {
+			 System.out.println("start  "+ ++i);
+		     i++;
+		 }
+			System.out.println("stop"); 
+	 }
+	 void meth3(int i)
+	 {
+		 System.out.println("code is staring...");
+		 while(i<=10)
+		 {
+			 //System.out.println("first "+ i++ + ++i);
+			 System.out.println("second "+ (i++ + ++i));
+		 }
+	 }
+	 void meth4(int i)
+	 {
+		 while (i<=5)
+			 System.out.println(i);
+			 i++;
+	 }
+	 void meth5(int i)
+	 {
+		 while(true)
+		 {
+			 System.out.println(i);
+			 i++;
+		 }
+	 }
+	 void meth6(int i)
+	 {
+		 do
+		 {
+			 System.out.println(i);
+			 i++;
+		 }
+		 while(i<=5);
+		 System.out.println("final i value "+i);
+	 }
+	public static void main(String[] args) 
+	{
+		while_ obj= new while_();
+		//obj.meth1(1);
+		//obj.meth2(1);
+		//obj.meth3(1);
+		//obj.meth4(1);
+		//obj.meth5(1);
+		obj.meth6(100);
+	}
+
+}
