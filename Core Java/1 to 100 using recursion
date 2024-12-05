@@ -1,0 +1,17 @@
+public class Main
+{
+    static int i=1;
+    void meth1()
+    {
+        if(i<=100)
+        {
+            System.out.println(i++);
+            new Main().meth1();
+        }
+    }
+	public static void main(String[] args) 
+	{
+	    Main obj=new Main();
+	    obj.meth1();
+	}
+}
