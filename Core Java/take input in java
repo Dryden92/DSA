@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main
+{
+    void meth()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your name: ");
+        String name=sc.nextLine();
+        System.out.println("your name is "+name);
+    }
+	public static void main(String[] args) 
+	{
+		new Main().meth();
+	}
+}
