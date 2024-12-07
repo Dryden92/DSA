@@ -1,0 +1,24 @@
+package javaprograms;
+
+public class loop_logic2 
+{
+	void meth1()
+	{
+		int i=0,j=0;
+		while(i<3)
+		{
+			do
+			{
+				j++;
+				System.out.println(j+" ");//1 2
+			}
+			while(j<2);
+			i++;
+		}
+	}
+	public static void main(String[] args) 
+	{
+		new loop_logic2().meth1();
+
+	}
+}
