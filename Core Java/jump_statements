@@ -1,0 +1,25 @@
+package javaprograms;
+
+public class jump_statements 
+{
+	void meth()
+	{
+		for(int i=1;i<=10;i++)
+		{
+			if(i==5)
+			{
+				//break;
+				//continue;
+				return;
+			}
+			System.out.println(i);
+		}
+	}
+	public static void main(String[] args) 
+	{
+		jump_statements obj=new jump_statements();
+		obj.meth();
+
+	}
+
+}
