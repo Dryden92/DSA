@@ -1,0 +1,38 @@
+package javaprograms;
+
+public class forloop1 
+{
+	void meth1()
+	{
+		int arr[]= {10,20,30,40,50,60};
+		System.out.println(arr[2]);
+		
+		System.out.println("-----------------");
+		
+		for(int i=0;i<6;i++)
+		{
+			System.out.println(arr[i]);
+		}
+		
+		System.out.println("==============");
+		
+		for(int i=5;i>=0;i--)
+		{
+			System.out.println(arr[i]);
+		}
+		
+		System.out.println("==============");
+		
+		for(int x:arr)               //foreach loop is using in this line
+		{
+			System.out.println(x);
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		forloop1 obj=new forloop1();
+		obj.meth1();
+	}
+
+}
