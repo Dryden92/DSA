@@ -1,0 +1,91 @@
+package javaprograms;
+import java.util.Scanner;
+
+public class Student {
+	    Scanner sc=new Scanner(System.in);
+	    void meth()
+	    {
+	        System.out.println("Welcome to the Student Grade Management System!");
+	        System.out.println("Enter the number of students: ");
+	        
+	        int number[]=new int[sc.nextInt()];
+	      
+	        for(int i=0;i<number.length;i++)
+	        {
+	            System.out.println("Enter the grade for student "+(i+1)+" : ");
+	            number[i]=sc.nextInt();
+	        }
+	       while(true)
+	       {
+	       System.out.println("\nMenu: ");
+	       System.out.println("1. View all grade");
+	       System.out.println("2. View the average grade");
+	       System.out.println("3. View the highest grade");
+	       System.out.println("4. View the lowest grade");
+	       System.out.println("5. Exit");
+	       
+	       System.out.println("Enter your choice: ");
+	       switch(sc.nextInt())
+	       {
+	            case 1:
+	                   System.out.println("Grades:");
+	                   for(int i=0;i<number.length;i++)
+	                    {
+	                       System.out.println("Student " + (i + 1) + ": " + number[i]);
+	                    }
+	                    
+	                    break;
+	               
+	            case 2:
+	                
+	                    int n=0;
+	                    for(int i=0;i<number.length;i++)
+	                    {
+	                        n+=number[i];
+	                    }
+	                    int avg=n/number.length;
+	                    System.out.println("Average grade is: "+avg);
+	                    break;
+	                
+	            case 3:
+	                
+	                    int highest=number[0];
+	                    for(int i=0;i<number.length;i++)
+	                    {
+	                        if(number[i]>highest)
+	                        {
+	                            highest=number[i];
+	                        }
+	                    }
+	                    System.out.println("Highest grade is: "+highest);
+	                    break;
+	            
+	            case 4:
+	                
+	                   int lowest=number[0];
+	                    for(int i=0;i<number.length;i++)
+	                    {
+	                        if(number[i]<lowest)
+	                        {
+	                            lowest=number[i];
+	                        }
+	                    }
+	                    System.out.println("Lowest grade is: "+lowest); 
+	                    break;
+	                
+	            case 5:
+	                    System.out.println("Exiting the program. Goodbye!");
+	                    return;
+	                
+	            default:
+	                    System.out.println("Invalid choice. Please try again.");
+	        }
+	      }
+	    }
+	public static void main(String[] args) 
+	{
+		Student obj=new Student();
+		obj.meth();
+	}
+
+}
