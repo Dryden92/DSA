@@ -1,0 +1,18 @@
+import java.util.Arrays;
+public class Main
+{
+    String [] meth(int arr[])
+    {
+        System.out.println(Arrays.toString(arr));
+        String name[]={"hi","hello","java"};
+        return name;
+    }
+	public static void main(String[] args) 
+	{
+		Main obj=new Main();
+		
+		int arr[]={10,20,30};
+		String name[]=obj.meth(arr);
+		System.out.println(Arrays.toString(name));
+	}
+}
