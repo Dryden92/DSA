@@ -1,0 +1,24 @@
+public class Main
+{
+    void meth()
+    {
+        int arr[]={};
+        if(arr.length>=2)
+        {
+            int a=arr[0]+arr[1];
+            System.out.println(a);
+        }
+        else if(arr.length>=1 && arr.length<=2)
+        {
+            int b=arr[0];
+            System.out.println(b);
+        }
+        else if(arr.length==0)
+         System.out.println(0);
+        
+    }
+	public static void main(String[] args) 
+	{
+		new Main().meth();
+	}
+}
