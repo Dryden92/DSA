@@ -1,0 +1,18 @@
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Main obj=new Main();
+		Main obj2=new Main();
+		
+		System.out.println(obj.hashCode());
+		System.out.println(obj2.hashCode());
+		
+		System.out.println(obj.equals(obj2));
+		System.out.println(obj.equals(obj));
+		System.out.println(obj2.equals(obj2));
+		
+		System.out.println(obj.equals(new Main()));
+		System.out.println(obj2.equals(new Main()));
+	}
+}
