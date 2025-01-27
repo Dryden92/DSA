@@ -1,0 +1,60 @@
+public class Main
+{
+	void meth()
+	{
+		String s1=new String("java");
+		StringBuffer s2=new StringBuffer("java is");
+		StringBuilder s3=new StringBuilder("java is awesome");
+
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+
+		s1.concat("is awesome"); //because of immutability
+		s2.append(" awesome");
+		s3.append(" forever");
+
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+	}
+	void meth2()
+	{
+		String b1=new String("java");
+		StringBuffer b2=new StringBuffer("java is");
+		StringBuilder b3=new StringBuilder("java is awesome");
+
+		String c1=new String("java");
+		StringBuffer c2=new StringBuffer("java is");
+		StringBuilder c3=new StringBuilder("java is");
+
+		System.out.println(b1.equals(c1));
+		System.out.println(b2.equals(c2));
+		System.out.println(b3.equals(c3));
+
+		System.out.println(b1==c1);
+		System.out.println(b2==c2);
+		System.out.println(b3==c3);
+
+		//compairing the contents inside the string buffer and string builder
+
+		System.out.println(b2.toString().equals(c2.toString()));
+		System.out.println(b3.toString().equals(c3.toString()));
+	}
+	void meth3()
+	{
+		StringBuffer sb=new StringBuffer();
+		System.out.println(sb.capacity());
+
+		sb.append("my name is dryden prasad currently persuing java full stack");
+		System.out.println(sb.length());
+		System.out.println(sb.capacity());
+        System.out.println(sb);
+        sb.reverse();
+        System.out.println(sb);
+	}
+	public static void main(String[] args)
+	{
+		new Main().meth3();
+	}
+}
