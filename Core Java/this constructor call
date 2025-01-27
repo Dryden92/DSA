@@ -1,0 +1,24 @@
+
+class Main 
+{
+    void meth()
+    {
+        System.out.println("this is method 1");
+    }
+    
+    Main(int x)
+    {
+        System.out.println("this is "+x);
+    }
+    Main()
+    {
+        this(50);
+        this.meth();
+        System.out.println("this is constructor");
+    }
+    
+    public static void main(String[] args)
+    {
+       Main obj=new Main();
+    }
+}
