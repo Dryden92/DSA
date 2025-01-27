@@ -1,0 +1,25 @@
+
+class Main 
+{
+    Main meth1()
+    {
+        System.out.println("this is a static method");
+        return this;
+    }
+    
+    Main meth2()
+    {
+        System.out.println("this is second method");
+        return this;
+    }
+    
+    Main meth3()
+    {
+        System.out.println("this is third method");
+        return this;
+    }
+    public static void main(String[] args)
+    {
+       new Main().meth1().meth2().meth3();
+    }
+}
