@@ -1,0 +1,21 @@
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    
+	   int a=0,b=6,c=5;
+	   
+	   if((a+b)>c)
+	   { 
+	       if((b+c)>a)
+	         {
+	               if((a+c)>b)
+	               {
+	                  System.out.println("valid triangle");
+	               }
+	               else
+	            	 System.out.println("not valid triangle");
+	         }
+	   }
+	}
+}
